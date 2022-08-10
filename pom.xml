@@ -138,7 +138,7 @@
         <dependency>
             <groupId>com.xebialabs.restito</groupId>
             <artifactId>restito</artifactId>
-            <version>1.0.0</version>
+            <version>0.9.5</version>
             <scope>test</scope>
         </dependency>
         <dependency>
