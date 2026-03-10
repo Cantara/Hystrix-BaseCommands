@@ -1,0 +1,21 @@
+id: Hystrix-BaseCommands
+name: Hystrix Base Commands
+version: 0.1.17-SNAPSHOT
+description: |
+  Base command classes for HTTP service calls using Netflix Hystrix circuit
+  breakers. Provides abstract command templates with built-in circuit-breaking,
+  timeouts, and fallback support for resilient service-to-service calls.
+units:
+  - id: http-commands
+    name: HTTP Commands
+    type: library
+    description: BaseHttpGetCommand and BaseHttpPostCommand — extend to add circuit-breaking to HTTP calls.
+    path: src/main/java/no/cantara/hystrix
+  - id: fallback
+    name: Fallback
+    type: component
+    description: Fallback strategy implementations — cached responses and safe defaults on failure.
+  - id: config
+    name: Configuration
+    type: component
+    description: Hystrix command configuration — timeout, thread pool, and circuit-breaker thresholds.
